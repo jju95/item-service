@@ -65,7 +65,7 @@ public class BasicItemController {
         return "basic/addForm";
     }
 
-    @PostMapping("/add")
+    //@PostMapping("/add")
     public String addItem3(@ModelAttribute("item") Item item) {
         itemRepository.save(item);
 
